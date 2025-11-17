@@ -1,7 +1,6 @@
 // File: src/components/VoteStats/VoteStats.tsx
 import React from 'react';
 import styles from './VoteStats.module.css';
-import StatusBar from '../StatusBar/StatusBar';
 import { Votes } from '../../types/votes';
 
 

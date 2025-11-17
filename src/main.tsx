@@ -3,7 +3,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // Нормалізація стилів
-import "modern-normalize";
+import 'modern-normalize/modern-normalize.css';
 // Глобальні стилі (додатково)
 //import "./global.css";
 
