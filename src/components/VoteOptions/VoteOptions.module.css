@@ -1,0 +1,58 @@
+.reset {
+  background-color: #852323;
+}
+
+.statistic_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistic_text {
+  text-align: start;
+  padding-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  padding: 2em;
+  flex-wrap: wrap;
+}
+
+button {
+  flex: 1 1 75px; /* Мінімальна ширина кожного елементу 150px */
+  /*  Параметри:
+    1 (grow): Елемент може розширюватися, щоб заповнити вільний простір.
+    1 (shrink): Елемент може стискатися, якщо місця недостатньо.
+    75px (basis): Мінімальна ширина кожного елементу. 
+*/
+
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: border 300ms ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px rgba(250, 250, 250, 0.4);
+  border-color: #fafafa;
+}
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px; /* резервує місце для reset і кнопок, щоб не стрибало */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.resetHidden {
+  visibility: hidden; /* приховує, але залишає простір */
+}

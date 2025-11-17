@@ -1,0 +1,11 @@
+.container {
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 3px;
+  padding: 16px;
+  box-sizing: border-box;
+  /* гарантуємо мінімальну висоту, щоб додавання/видалення елементів не стрибало */
+  min-height: 120px;
+}
+.stat {
+}
