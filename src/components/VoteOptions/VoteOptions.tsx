@@ -15,14 +15,11 @@ const VoteOptions: React.FC<VoteOptionsProps> = ({ onVote, onReset, canReset }) 
       <button type="button" onClick={() => onVote('neutral')}>Neutral</button>
       <button type="button" onClick={() => onVote('bad')}>Bad</button>
 
-      <button
-        type="button"
-        className={canReset ? styles.reset : styles.resetHidden}
-        onClick={onReset}
-        aria-hidden={!canReset}
-      >
-        Reset
-      </button>
+      {canReset && (
+        <button type="button" className={`${styles.button} ${styles.reset}`} onClick={onReset}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };

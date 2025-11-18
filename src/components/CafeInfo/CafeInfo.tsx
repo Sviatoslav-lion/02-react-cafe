@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './CafeInfo.module.css';
 
-const Description: React.FC = () => {
+const CafeInfo: React.FC = () => {
   return (
     <div className={css.container}>
       <h1 className={css.title}>Sip Happens Café</h1>
@@ -12,4 +12,4 @@ const Description: React.FC = () => {
   );
 };
 
-export default Description;
+export default CafeInfo;
